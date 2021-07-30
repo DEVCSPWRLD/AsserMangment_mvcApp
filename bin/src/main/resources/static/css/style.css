@@ -1,0 +1,133 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap')
+;
+
+html, body {
+height: 100%;
+font-family: 'Nunito', sans-serif;
+/* margin: 50px; */
+}
+.space{
+	margin: 50px;
+}
+
+
+.card {
+border-radius: 0px !important;
+min-width: 400px;
+min-height: 300px;
+}
+
+.card-header {
+background-color:#4E7E6B;
+border-radius: 0px !important;
+margin: 0;
+top-padding:20px;
+}
+
+.text-grey {
+color: grey;
+}
+
+.btn-primary {
+background-color:#4E7E6B;
+border: 0px transparent;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.btn-primary:disabled {
+background-color:#4E7E6B !important;
+border: 0px transparent;
+box-shadow: 0 2px 6px 0 #4E7E6B !important;
+}
+
+.purple {
+background-color: #4E7E6B;
+}
+label{
+    cursor: default;
+	font-weight:800;
+}
+.collapse {
+display: none !important;
+}
+
+.shadow {
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+rgba(0, 0, 0, 0.22) !important;
+}
+form label.required:after
+{
+    color: red;
+    content: " *";
+}
+.text-danger
+{
+	color:red;
+}
+.fa
+{
+	position:absolute;
+	right:22px;
+	transform:translate(0,-50%);
+	cursor:pointer;
+	font-size:20px;
+	color:#7a797e;
+	margin-top:15px;
+}
+.hide
+{
+	
+	position:absolute;
+	right:22px;
+	transform:translate(0,-50%);
+	cursor:pointer;
+	font-size:20px;
+	color:#7a797e;
+	margin-top:-15px;
+}
+#message
+{
+    display:none;
+    
+}
+#message p
+{
+    font-size:15px;
+    padding-left:20px;
+}
+.color
+{
+    color:black;
+}
+.invalid
+{
+    color:red;
+    
+}
+.valid
+{
+    color:green;
+    
+}
+@media screen and (max-width: 450px) {
+.left {
+display: none;
+}
+.card-header {
+display: none;
+}
+
+.collapse {
+display: flex !important;
+}
+.text-danger
+{
+	color:red;
+}
+.topnav
+{
+	display: block;
+}
+
+}

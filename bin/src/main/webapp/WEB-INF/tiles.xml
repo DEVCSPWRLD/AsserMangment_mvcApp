@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<!-- Dashboard -->
+	<definition name="/user/dashboard" template="/WEB-INF/views/user/dashboard.jsp">
+		<put-attribute name="title" value="User Dashboard" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />
+ 	 </definition>
+ 	 
+ 	 
+ 	 
+ 	 
+ 	 <!-- Change Password -->
+	  <definition name="/user/changepass" extends="/user/dashboard">
+       <put-attribute name="title" value="Change Password" />
+       <put-attribute name="body" value="/WEB-INF/views/user/changepass.jsp" />
+   </definition>  
+   
+   
+   <!-- Admin Dashboard -->
+     <definition name="/admin/dashboard" extends="/user/dashboard">
+     <put-attribute name="title" value="Admin Dashboard" />
+       <put-attribute name="body" value="/WEB-INF/views/admin/dashboard.jsp" />
+   </definition>  
+   
+   <!-- Asset Report -->
+   <definition name="/admin/report" extends="/user/dashboard">
+   		<put-attribute name="title" value="Asset Report" />
+       <put-attribute name="body" value="/WEB-INF/views/admin/report.jsp" />
+   </definition>  
+   
+   <!-- Asset Track -->
+    <definition name="/user/track" extends="/user/dashboard">
+    	<put-attribute name="title" value="Asset Track" />
+       <put-attribute name="body" value="/WEB-INF/views/user/track.jsp" />
+   </definition>  
+   
+    <!-- Track Info -->
+    <definition name="/user/trackinfo" extends="/user/dashboard">
+    	<put-attribute name="title" value="Track Info" />
+       <put-attribute name="body" value="/WEB-INF/views/user/trackinfo.jsp" />
+   </definition>  
+   
+   <!-- Asset Register -->
+    <definition name="/user/asset" extends="/user/dashboard">
+       <put-attribute name="title" value="Asset Register" />
+       <put-attribute name="body" value="/WEB-INF/views/user/asset.jsp" />
+   </definition>
+   
+   <!--  Edit Asset -->
+    <definition name="/admin/editasset" extends="/user/dashboard">
+       <put-attribute name="title" value="Asset Register" />
+       <put-attribute name="body" value="/WEB-INF/views//admin/editasset.jsp" />
+   </definition>
+   
+
+</tiles-definitions>

@@ -1,0 +1,18 @@
+//eye
+var state= false;
+	function toggle()
+	{
+	    if(state)
+	    
+	    {
+		document.getElementById("form_password").setAttribute("type","password");
+		/*document.getElementById("eye").style.color='#7a797e';*/
+		state = false;
+	     }
+	     else{
+		document.getElementById("form_password").setAttribute("type","text");
+		/*document.getElementById("eye").style.color='#5887ef';*/
+		state = true;
+	     }
+	}
+		
